@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main  # change this if your default branch is different
 
 permissions:
   contents: read
@@ -32,13 +32,14 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact 📦
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Adjust if your build folder is different
+          path: ./dist  # adjust if your build output folder is different
 
-      - name: Deploy
-        uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages 🚀
+        uses: actions/deploy-pages@v4
+
