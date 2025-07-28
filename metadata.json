@@ -1,0 +1,6 @@
+{
+  "name": "bolt.jk",
+  "description": "bolt.jk: A tool that uses the Gemini API to generate and iteratively refine single-page websites from a chat conversation.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
