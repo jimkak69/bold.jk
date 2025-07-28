@@ -3,7 +3,7 @@ import type { Message } from '../types';
 
 export const getApiKey = (): string => {
   // Hardcoded API key as requested.
-  return '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';
+  return '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';
 };
 
 
