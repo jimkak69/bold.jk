@@ -1,7 +1,8 @@
 {
   "name": "bolt.jk",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://jimkak69.github.io/bold.jk/",
   "type": "module",
   "scripts": {
     "dev": "vite",
