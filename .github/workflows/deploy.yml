@@ -19,7 +19,7 @@ jobs:
 
       - name: Replace API Key in source
         run: |
-          sed -i "s|REPLACE_WITH_API_KEY|${{ secrets.OPENROUTER_API_KEY }}|g" src/services/geminiService.ts
+          sed -i "s|REPLACE_WITH_API_KEY|${{ secrets.OPENROUTER_API_KEY }}|g" services/geminiService.ts
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
